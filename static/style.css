@@ -1,0 +1,118 @@
+/* General Style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #343541;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Chat Container */
+.chat-container {
+    width: 90%;
+    max-width: 600px;
+    background-color: #444654;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Message Box */
+.chatbox {
+    height: 400px;
+    overflow-y: auto;
+    padding: 10px;
+    border-radius: 5px;
+    background: #2a2b30;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Message Styling */
+.message {
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    max-width: 80%;
+}
+
+/* User Message */
+.user {
+    background-color: #0d6efd;
+    align-self: flex-end;
+    text-align: right;
+}
+
+/* AI Message */
+.ai {
+    background-color: #5c5f67;
+    align-self: flex-start;
+}
+
+/* Loading Animation */
+#ai-response {
+    font-style: italic;
+    color: #ccc;
+}
+
+/* Input Container */
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    background: #2a2b30;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Text Input */
+textarea {
+    flex-grow: 1;
+    background: none;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    resize: none;
+    outline: none;
+}
+
+/* Send Button */
+button {
+    background-color: #0d6efd;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #0b5ed7;
+}
+
+/* Custom Scrollbar */
+.chatbox::-webkit-scrollbar {
+    width: 5px;
+}
+
+.chatbox::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+
+.chatbox::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
